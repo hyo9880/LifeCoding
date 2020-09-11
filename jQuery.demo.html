@@ -4,17 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script type="text/javascript" src="jquery.js"></script>
   </head>
   <body>
     <ul id="list">
-      <ul>
-        <list>empty</list>
-        <list>empty</list>
-        <list>empty</list>
-        <list>empty</list>
-        <list>empty</list>
-        <list>empty</list>
-      </ul>
+      <li>Empty</li>
+      <li>Empty</li>
+      <li>Empty</li>
+      <li>Empty</li>
+      <li>Empty</li>
     </ul>
+    <input type="button" value="execute" id="execute_btn" />
+    <script type="text/javascript">
+      $("#execute_btn").click(function () {
+        $("#list li").text("coding everybody");
+      });
+    </script>
   </body>
 </html>
